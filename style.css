@@ -3,4 +3,11 @@ body {
     height: 100vh;
     overflow: hidden;
     background: black;
+} 
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
 }
