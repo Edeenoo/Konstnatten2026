@@ -5,6 +5,7 @@ body {
     background: black;
        font-family: "Lobster", sans-serif;
         font-weight: bold;
+        color:white
 } 
 
 a {
@@ -88,5 +89,18 @@ img {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.dialog {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-rendering: 80px;
+    border-radius: 10px;
+    z-index: 3;
 }
 

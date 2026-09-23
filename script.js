@@ -32,3 +32,63 @@ function kontrolleraPussel() {
         document.getElementById("vidare").style.display = "none";
     }
 }
+
+function svara(val) {
+
+    if (val === 1) {
+        document.getElementById("character").innerHTML =
+            "Va? Nej! Du måste släppa ut mig! Jag är Åke Holm";
+
+        document.getElementById("choices").innerHTML = `
+            <button onclick="svara(4)">Okej då...</button>
+            <button onclick="svara(5)">Vilken bra poäng!</button>
+        `;
+
+    } else if (val === 2) {
+        document.getElementById("character").innerHTML =
+            "Snälla";
+
+        document.getElementById("choices").innerHTML = `
+            <button onclick="svara(6)">Okej jag öppnar dörren</button>
+            <button onclick="svara(7)">Okej jag öppnar dörren(men bestämt)</button>
+        `;
+
+    } else if (val === 3) {
+        document.getElementById("character").innerHTML =
+            "Tack! Skynda dig och öppna dörren!";
+
+        document.getElementById("choices").innerHTML = `
+            <button onclick="svara(8)">Öppna dörren</button>
+        `;
+
+    } else if (val === 4) {
+        document.getElementById("character").innerHTML =
+            "Äntligen! Jag visste att du skulle hjälpa mig.";
+
+        document.getElementById("choices").innerHTML = "";
+
+    } else if (val === 5) {
+        document.getElementById("character").innerHTML =
+            "Tack";
+
+        document.getElementById("choices").innerHTML = "";
+
+    } else if (val === 6) {
+        document.getElementById("character").innerHTML =
+            "Wohooo jag är räddad!";
+
+        document.getElementById("choices").innerHTML = "";
+
+    } else if (val === 7) {
+        document.getElementById("character").innerHTML =
+            "Tack! Jag kan garantera din plats i deltagarrådet inför all framtid";
+
+        document.getElementById("choices").innerHTML = "";
+
+    } else if (val === 8) {
+        document.getElementById("character").innerHTML =
+            "Dörren öppnas...";
+
+        document.getElementById("choices").innerHTML = "";
+    }
+}
