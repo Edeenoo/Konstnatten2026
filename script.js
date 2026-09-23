@@ -37,7 +37,7 @@ function svara(val) {
 
     if (val === 1) {
         document.getElementById("character").innerHTML =
-            "Va? Nej! Du måste släppa ut mig! Jag är Åke Holm";
+            "Va? Nej! Du måste släppa ut mig! Jag är Åke Holm rektor över Ölands folkhögskola";
 
         document.getElementById("choices").innerHTML = `
             <button onclick="svara(4)">Okej då...</button>
@@ -46,7 +46,7 @@ function svara(val) {
 
     } else if (val === 2) {
         document.getElementById("character").innerHTML =
-            "Snälla";
+            "Snälla jag kan erbjuda dig en egen programpunkt på nästa måndagsmöte";
 
         document.getElementById("choices").innerHTML = `
             <button onclick="svara(6)">Okej jag öppnar dörren</button>
