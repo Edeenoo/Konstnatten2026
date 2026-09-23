@@ -50,22 +50,32 @@ img {
 }
 /*spakar*/
 .spakar {
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 60px;
     z-index: 2;
 }
 
 .spakar img {
     position: relative;
-    z-index: 2;
-    width: 100px;
+    width: 180px;
     height: auto;
+    object-fit: contain;
     cursor: pointer;
+    z-index: 2;
 }
 
 #vidare {
     display: none;
     text-align: center;
-    margin-top: 30px;
+  position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
