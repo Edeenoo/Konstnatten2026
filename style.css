@@ -9,7 +9,8 @@ body {
 } 
 
 a {
-    color: rgb(168, 161, 161);
+    color: rgb(255, 239, 174);
+    text-shadow: 0px 2px rgb(0, 0, 0), 0px -2px rgb(0, 0, 0), 2px 0px rgb(0, 0, 0), -2px 0px rgb(0, 0, 0);
     text-decoration: none;
 }
 
