@@ -3,8 +3,18 @@ body {
     height: 100vh;
     overflow: hidden;
     background: black;
+       font-family: "Lobster", sans-serif;
+        font-weight: bold;
 } 
 
+a {
+    color: rgb(168, 161, 161);
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+}
 img {
     position:absolute;
     z-index: -1;
@@ -79,3 +89,4 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
