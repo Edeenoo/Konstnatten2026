@@ -92,3 +92,7 @@ function svara(val) {
         document.getElementById("choices").innerHTML = "";
     }
 }
+
+function visaText() {
+    document.getElementById("text").style.display = "block";
+}
