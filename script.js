@@ -40,8 +40,8 @@ function svara(val) {
             "Va? Nej! Du måste släppa ut mig! Jag är Åke Holm";
 
         document.getElementById("choices").innerHTML = `
-            <button onclick="svara(4)">Okej då...</button>
-            <button onclick="svara(5)">Vilken bra poäng!</button>
+            <button class="knapp" onclick="svara(4)">Okej då...</button>
+            <button class="knapp" onclick="svara(5)">Vilken bra poäng!</button>
         `;
 
     } else if (val === 2) {
@@ -49,8 +49,10 @@ function svara(val) {
             "Snälla";
 
         document.getElementById("choices").innerHTML = `
-            <button onclick="svara(6)">Okej jag öppnar dörren</button>
-            <button onclick="svara(7)">Okej jag öppnar dörren(men bestämt)</button>
+        
+            <button  onclick="svara(6)">Okej jag öppnar dörren</button>
+            <button  onclick="svara(7)">Okej jag öppnar dörren(men bestämt)</button>
+        
         `;
 
     } else if (val === 3) {
@@ -58,7 +60,7 @@ function svara(val) {
             "Tack! Skynda dig och öppna dörren!";
 
         document.getElementById("choices").innerHTML = `
-            <button onclick="svara(8)">Öppna dörren</button>
+            <button class="knapp" onclick="svara(8)">Öppna dörren</button>
         `;
 
     } else if (val === 4) {
