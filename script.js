@@ -36,6 +36,8 @@ function kontrolleraPussel() {
 function svara(val) {
 
     if (val === 1) {
+        spelaLjud("akeljud/slapputmig2.mp3");
+        
         document.getElementById("character").innerHTML =
             "Va? Nej! Du måste släppa ut mig! Jag är Åke Holm rektor över Ölands folkhögskola";
 
@@ -45,6 +47,7 @@ function svara(val) {
         `;
 
     } else if (val === 2) {
+        spelaLjud("akeljud/mondagsmote.mp3");
         document.getElementById("character").innerHTML =
             "Snälla jag kan erbjuda dig en egen programpunkt på nästa måndagsmöte";
 
@@ -56,6 +59,7 @@ function svara(val) {
         `;
 
     } else if (val === 3) {
+ spelaLjud("akeljud/skynda.mp3");
         document.getElementById("character").innerHTML =
             "Tack! Skynda dig och öppna dörren!";
 
@@ -64,24 +68,28 @@ function svara(val) {
         `;
 
     } else if (val === 4) {
+        spelaLjud("akeljud/antligen.mp3");
         document.getElementById("character").innerHTML =
             "Äntligen! Jag visste att du skulle hjälpa mig." + '<a href="index8ake.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
 
     } else if (val === 5) {
+        spelaLjud("akeljud/Tack.mp3");
         document.getElementById("character").innerHTML =
             "Tack" + '<a href="index8ake.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
 
     } else if (val === 6) {
+        spelaLjud("akeljud/Wohooo.mp3");
         document.getElementById("character").innerHTML =
             "Wohooo jag är räddad!" + '<a href="index8ake.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
 
     } else if (val === 7) {
+        spelaLjud("akeljud/deltagare.mp3");
         document.getElementById("character").innerHTML =
             "Tack! Jag kan garantera din plats i deltagarrådet inför all framtid" + '<a href="index8ake.html" >Gå vidare</a>';
 
@@ -106,7 +114,7 @@ function visa() {
 function svaraAke2(val) {
 
     if (val === 1) {
-
+spelaLjud("akeljud/expeditionen.mp3");
         document.getElementById("character").innerHTML =
             "Hm, du kanske har en poäng där… okej då jag släpper igenom dig, men gå förbi expeditionen och skaffa rätt tagg så snart som möjligt!";
 
@@ -115,17 +123,25 @@ function svaraAke2(val) {
         ` ;
 
     } else if (val === 2) {
-
+spelaLjud("akeljud/Ljugejtillmig.mp3");
         document.getElementById("character").innerHTML =
             "Nej du! Nu ljuger du bara jag, Åke Holm, Rektor av Ölands Folkhögskola, ska inte ljugas till. Iväg med dig nu." + '<a href="index17ake.html" ">Försök igen</a>';
 
         document.getElementById("choices").innerHTML = "";
 
     } else if (val === 3) {
-
+spelaLjud("akeljud/.mp3");
         document.getElementById("character").innerHTML =
             "Bra och glöm inte att skaffa rätt tagg!" + '<a href="index8ake.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
     }
+}
+
+function spelaLjud(file) {
+    const audio = document.getElementById("dialogueSound");
+
+    audio.src = file;
+    audio.currentTime = 0;
+    audio.play();
 }
