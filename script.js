@@ -36,6 +36,8 @@ function kontrolleraPussel() {
 function svara(val) {
 
     if (val === 1) {
+        spelaLjud("akeljud/slapputmig2.mp3");
+        
         document.getElementById("character").innerHTML =
             "Va? Nej! Du måste släppa ut mig! Jag är Åke Holm rektor över Ölands folkhögskola";
 
@@ -45,6 +47,7 @@ function svara(val) {
         `;
 
     } else if (val === 2) {
+        spelaLjud("akeljud/mondagsmote.mp3");
         document.getElementById("character").innerHTML =
             "Snälla jag kan erbjuda dig en egen programpunkt på nästa måndagsmöte";
 
@@ -56,6 +59,7 @@ function svara(val) {
         `;
 
     } else if (val === 3) {
+ spelaLjud("akeljud/skynda.mp3");
         document.getElementById("character").innerHTML =
             "Tack! Skynda dig och öppna dörren!";
 
@@ -128,4 +132,12 @@ function svaraAke2(val) {
 
         document.getElementById("choices").innerHTML = "";
     }
+}
+
+function spelaLjud(file) {
+    const audio = document.getElementById("dialogueSound");
+
+    audio.src = file;
+    audio.currentTime = 0;
+    audio.play();
 }
