@@ -108,6 +108,7 @@ function visaText() {
 }
 
 function visa() {
+    spelaLjud("akeljud/underbara.mp3");
     document.getElementById("text2").style.display = "block";
     }
 
@@ -132,7 +133,7 @@ spelaLjud("akeljud/Ljugejtillmig.mp3");
     } else if (val === 3) {
 spelaLjud("akeljud/.mp3");
         document.getElementById("character").innerHTML =
-            "Bra och glöm inte att skaffa rätt tagg!" + '<a href="index8ake.html" >Gå vidare</a>';
+            "Bra och glöm inte att skaffa rätt tagg!" + '<a href="indexkontor.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
     }
