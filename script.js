@@ -65,7 +65,7 @@ function svara(val) {
 
     } else if (val === 4) {
         document.getElementById("character").innerHTML =
-            "Äntligen! Jag visste att du skulle hjälpa mig.";
+            "Äntligen! Jag visste att du skulle hjälpa mig." + '<a href="index8ake.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
 
