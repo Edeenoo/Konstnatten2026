@@ -50,8 +50,8 @@ function svara(val) {
 
         document.getElementById("choices").innerHTML = `
         
-            <button  onclick="svara(6)">Okej jag öppnar dörren</button>
-            <button  onclick="svara(7)">Okej jag öppnar dörren(men bestämt)</button>
+            <button class="knapp" onclick="svara(6)">Okej jag öppnar dörren</button>
+            <button class="knapp" onclick="svara(7)">Okej jag öppnar dörren(men bestämt)</button>
         
         `;
 
