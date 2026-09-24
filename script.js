@@ -71,7 +71,7 @@ function svara(val) {
 
     } else if (val === 5) {
         document.getElementById("character").innerHTML =
-            "Tack";
+            "Tack" + '<a href="index8ake.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
 
@@ -101,7 +101,8 @@ function visaText() {
 
 function visa() {
     document.getElementById("text2").style.display = "block";
-}
+    }
+
 function svaraAke2(val) {
 
     if (val === 1) {
@@ -111,7 +112,7 @@ function svaraAke2(val) {
 
         document.getElementById("choices").innerHTML = `
             <button onclick="svaraAke2(3)">Tack så mycket, Åke!</button>
-        `;
+        ` ;
 
     } else if (val === 2) {
 
@@ -123,7 +124,7 @@ function svaraAke2(val) {
     } else if (val === 3) {
 
         document.getElementById("character").innerHTML =
-            "Bra. Och glöm inte att skaffa rätt tagg!";
+            "Bra och glöm inte att skaffa rätt tagg!" + '<a href="index8ake.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
     }
