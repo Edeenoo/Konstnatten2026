@@ -163,6 +163,7 @@ img {
     top: 50%;
     left: 30%;
     z-index: 1;
+    
 }
 
 .centeredake {
@@ -176,4 +177,22 @@ img {
     position: absolute;
     top: 50%;
     left: 55%;
+}
+
+.knapptext {
+    border: none;
+    background: none;
+    color: rgb(255, 239, 174);
+    text-shadow: 0px 2px rgb(0, 0, 0), 0px -2px rgb(0, 0, 0), 2px 0px rgb(0, 0, 0), -2px 0px rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#text {
+    width: 50%;
+    background-color: rgba(10, 8, 6, 0.8);
+    border: 2px solid rgb(182, 170, 123);
+    color: white;
+    padding: 20px;
 }
