@@ -122,3 +122,16 @@ img {
     color: red;
 }
 
+.speltitel {
+    font-family: "Press Start 2P", monospace;
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 0px black;
+    white-space: nowrap;
+}
+
