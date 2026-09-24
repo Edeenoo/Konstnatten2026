@@ -98,3 +98,4 @@ function svara(val) {
 function visaText() {
     document.getElementById("text").style.display = "block";
 }
+
