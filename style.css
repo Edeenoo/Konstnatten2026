@@ -60,6 +60,13 @@ img {
     left: 75%;
     z-index: 2;
 }
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    z-index: 2;
+}
 /*spakar*/
 .spakar {
     position: absolute;
