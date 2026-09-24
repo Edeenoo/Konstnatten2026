@@ -158,7 +158,7 @@ img {
     z-index: 3;
 }
 
-.vänsterake {
+.vansterake {
     position: absolute;
     top: 50%;
     left: 30%;
@@ -170,4 +170,10 @@ img {
     top: 50%;
     left: 60%;
     
+}
+
+.centeredright {
+    position: absolute;
+    top: 50%;
+    left: 55%;
 }

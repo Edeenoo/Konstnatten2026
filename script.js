@@ -99,6 +99,9 @@ function visaText() {
     document.getElementById("text").style.display = "block";
 }
 
+function visa() {
+    document.getElementById("text2").style.display = "block";
+}
 function svaraAke2(val) {
 
     if (val === 1) {
