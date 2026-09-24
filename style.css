@@ -150,3 +150,17 @@ img {
     border-radius: 1px;
     z-index: 3;
 }
+
+.vänsterake {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 1;
+}
+
+.centeredake {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    
+}
