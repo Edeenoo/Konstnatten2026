@@ -138,7 +138,7 @@ spelaLjud("akeljud/Ljugejtillmig.mp3");
     } else if (val === 3) {
 spelaLjud("akeljud/.mp3");
         document.getElementById("character").innerHTML =
-            "Bra och glöm inte att skaffa rätt tagg!" + '<a href="indexkontor.html" >Gå vidare</a>';
+            "Bra och glöm inte att skaffa rätt tagg!" + '<a href="index17door.html" >Gå vidare</a>';
 
         document.getElementById("choices").innerHTML = "";
     }
