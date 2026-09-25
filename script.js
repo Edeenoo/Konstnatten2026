@@ -152,8 +152,6 @@ function spelaLjud(file) {
     audio.play();
 }
 
-document.querySelector(".outro").volume = 0.3;
-
 // script.js
 const Keyboard = {
 	elements: {
