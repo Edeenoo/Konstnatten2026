@@ -381,16 +381,19 @@ const Keyboard = {
 const text = this.properties.value.trim().toLowerCase();
 
 // Här bestämmer du vilket ord som ska ge en länk
-const valtOrd = "Tiden";
-const altOrd = "tiden";
-const ltOrd = "TIDEN";
+const valtOrd = "Framtiden";
+const altOrd = "framtiden";
+const ltOrd = "framtid";
+const alttord = "Framtid";
+const altyord = "FRAMTIDEN";
+const altttord = "FRAMTID";
 
 
 
 // Elementet där länken ska visas
 const result = document.getElementById("result");
 
-if (text === valtOrd || text === altOrd || text === ltOrd) {
+if (text === valtOrd || text === altOrd || text === ltOrd || text === alttord|| text === altyord|| text === altttord) {
     result.innerHTML =
         '<a href="index15alt.html" >Gå vidare</a>';
 } else {
